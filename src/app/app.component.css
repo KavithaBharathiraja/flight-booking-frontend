@@ -1,0 +1,82 @@
+/* Body Font and General Styles */
+body {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  url("https://images.pexels.com/photos/2422461/pexels-photo-2422461.jpeg?cs=srgb&dl=pexels-josh-hild-2422461.jpg&fm=jpg");
+  font-family: 'Roboto', Arial, sans-serif; /* Use a more modern font */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Centering the App Container */
+.app-container {
+  text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Modern Navigation Style */
+nav {
+  background-color: #3d5a60e0; /* White background for the navbar */
+  padding: 20px 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  border-radius: 100px;
+}
+
+.nav-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  gap: 30px; /* Space between menu items */
+}
+
+.nav-list li {
+  display: inline;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #333; /* Dark color for the text */
+  font-size: 1.1rem; /* Slightly larger font size */
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.nav-link:hover {
+  background-color: #b18949; /* Orange background on hover */
+  color: white; /* White text on hover */
+  border-radius: 100px;
+}
+
+/* Active link styling */
+.nav-link.active {
+  background-color: #4c834e; /* Green color for active link */
+  color: white;
+  border-radius: 100px;
+}
+
+h1.text-center {
+  font-size: 2.5rem; /* Larger title size */
+  color: #333;
+  margin-top: 20px;
+  font-weight: 700; /* Make the title bold */
+  letter-spacing: 1px; /* Add spacing between letters for a modern feel */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .nav-list {
+    flex-direction: column; /* Stack the links vertically on smaller screens */
+    gap: 15px;
+  }
+
+  h1.text-center {
+    font-size: 2rem; /* Adjust title size on smaller screens */
+  }
+}

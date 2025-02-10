@@ -1,0 +1,90 @@
+/* flights.component.css */
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  color: white;
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+  padding: 40px;
+}
+
+.header {
+  background: rgba(0, 0, 0, 0.5); /* Slight transparent overlay for readability */
+  padding: 20px;
+  border-radius: 100px;
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.header h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+.header p {
+  font-size: 1.2em;
+}
+
+.flights-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.flight-card {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+  border-radius: 100px;
+  max-width: 300px;
+  width: 100%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.flight-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+}
+
+.flight-card h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.flight-card p {
+  font-size: 1.1em;
+  margin: 5px 0;
+}
+
+.flight-card button {
+  background: #ca6e4d; /* Coral color */
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-size: 1.1em;
+  border-radius: 100px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.flight-card button:hover {
+  background: #ff6347; /* Darker coral color */
+}
+
+.background {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("https://images.pexels.com/photos/2422461/pexels-photo-2422461.jpeg?cs=srgb&dl=pexels-josh-hild-2422461.jpg&fm=jpg");
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  z-index: -1;
+}

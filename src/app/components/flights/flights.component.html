@@ -1,0 +1,17 @@
+<!-- flights.component.html -->
+<div class="main-container">
+  <div class="header">
+    <h1>Welcome to the TAF Flight Booking App</h1>
+    <p>Explore available flights and book your next journey.</p>
+  </div>
+  <div class="background"></div>
+  
+  <div class="flights-container">
+    <div *ngFor="let flight of flights$ | async" class="flight-card">
+      <h3>{{ flight.origin }} to {{ flight.destination }}</h3>
+      <p>Price: ${{ flight.price }}</p>
+      <p>Available Seats: {{ flight.availableSeats }}</p>
+      <button (click)="bookFlight(flight.id)">Book Now</button>
+    </div>
+  </div>
+</div>
