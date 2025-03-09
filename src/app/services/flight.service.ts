@@ -6,7 +6,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class FlightService {
-  private baseUrl = 'http://localhost:8080/flights';
+  private baseUrl = 'https://kavithabharathiraja.github.io/flightbooking/';
 
   constructor(private http: HttpClient) {}
 
